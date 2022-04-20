@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Question5
 {
@@ -25,8 +27,27 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
+    List<Int> int_list = new ArrayList<Int>();
     Scanner in = new Scanner(System.in);
-    
+    Int integer = in.nextInt();
+    for(int i = 0; i < integer; i++){
+      int_list.add(in.nextInt()); 
+    }
+
+    // Referred from tutorialpoint
+    int maxValue = 0, maxCount = 0, i, j;
+
+      for (i = 0; i < n; i++) {
+         int count = 0;
+         for (j = 0; j < n; ++j) {
+            if (a[j] == a[i])
+            ++count;
+         }
+
+         if (count > maxCount) {
+            maxCount = count;
+            maxValue = a[i];
+         }
+    System.out.println(maxValue)
   }
 }
