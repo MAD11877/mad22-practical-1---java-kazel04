@@ -27,9 +27,9 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-    List<Int> int_list = new ArrayList<Int>();
+    List<Integer> int_list = new ArrayList<Integer>();
     Scanner in = new Scanner(System.in);
-    Int integer = in.nextInt();
+    int integer = in.nextInt();
     for(int i = 0; i < integer; i++){
       int_list.add(in.nextInt()); 
     }
@@ -37,18 +37,17 @@ public class Question5
     // Referred from tutorialpoint
     int maxValue = 0, maxCount = 0, i, j;
 
-      for (i = 0; i < n; i++) {
+      for (i = 0; i < int_list.length; i++) {
          int count = 0;
-         for (j = 0; j < n; ++j) {
-            if (a[j] == a[i])
+         for (j = 0; j < int_list.length; ++j) {
+            if (int_list[j] == int_list[i])
             ++count;
          }
 
          if (count > maxCount) {
             maxCount = count;
-            maxValue = a[i];
+            maxValue = int_list[i];
          }
-    System.out.println(maxValue);
+    System.out.println(maxValue)
   }
-}
 }
