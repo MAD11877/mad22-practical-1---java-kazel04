@@ -48,6 +48,6 @@ public class Question5
             maxCount = count;
             maxValue = a[i];
          }
-    System.out.println(maxValue)
+    System.out.println(maxValue);
   }
 }
