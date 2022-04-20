@@ -37,16 +37,16 @@ public class Question5
     // Referred from tutorialpoint
     int maxValue = 0, maxCount = 0, i, j;
 
-      for (i = 0; i < int_list.length; i++) {
+      for (i = 0; i < int_list.size(); i++) {
          int count = 0;
-         for (j = 0; j < int_list.length; ++j) {
-            if (int_list[j] == int_list[i])
+         for (j = 0; j < int_list.size(); ++j) {
+            if (int_list[j] == int_list.get(i))
             ++count;
          }
 
          if (count > maxCount) {
             maxCount = count;
-            maxValue = int_list[i];
+            maxValue = int_list.get(i);
          }
     System.out.println(maxValue);
   }
