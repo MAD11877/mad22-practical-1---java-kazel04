@@ -40,7 +40,7 @@ public class Question5
       for (i = 0; i < int_list.size(); i++) {
          int count = 0;
          for (j = 0; j < int_list.size(); ++j) {
-            if (int_list[j] == int_list.get(i))
+            if (int_list.get(j) == int_list.get(i))
             ++count;
          }
 
