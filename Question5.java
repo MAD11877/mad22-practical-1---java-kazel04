@@ -48,7 +48,7 @@ public class Question5
             maxCount = count;
             maxValue = int_list.get(i);
          }
-    System.out.println(maxValue);
   }
+  System.out.println(maxValue);
 }
 }
